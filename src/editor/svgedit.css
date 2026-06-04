@@ -10,7 +10,6 @@
   --input-color: #B2B2B2;
   --orange-color: #f9bc01;
   --global-se-spin-input-width: 82px;
-  --top-toolbar-min-height: 80px;
 }
 
 .svg_editor * {
@@ -19,13 +18,14 @@
 
 .svg_editor {
   display: grid;
-  grid-template-rows: minmax(var(--top-toolbar-min-height), auto) 15px 1fr 40px;
+  grid-template-rows: auto auto 15px 1fr 40px;
   grid-template-columns: 40px 15px 50px 1fr 15px;
   grid-template-areas:
-    "main main   main top top"
-    "left corner rulerX rulerX side"
-    "left rulerY workarea workarea side"
-    "left bottom bottom bottom bottom";
+    "main     main    main      top       top"
+    "fstools  fstools fstools   fstools   fstools"
+    "left     corner  rulerX    rulerX    side"
+    "left     rulerY  workarea  workarea  side"
+    "left     bottom  bottom    bottom    bottom";
   font-size: 8pt;
   background: var(--main-bg-color);
   font-family: Verdana, Helvetica, Arial;
