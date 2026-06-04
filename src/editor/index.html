@@ -36,7 +36,8 @@
     allowInitialUserOverride: true,
     extensions: [],
     noDefaultExtensions: false,
-    userExtensions: [/* { pathName: '/packages/react-test/dist/react-test.js' } */]
+    showlayers: true, // show left panel on start (is collapsed by default)
+    userExtensions: [ { pathName: './extensions/Feng-Shui-Tools-for-SVGEdit/dist/main-panel.js' } ]
   })
   svgEditor.init()
   if (typeof XDOMAIN !== 'undefined' && XDOMAIN) {

@@ -307,7 +307,6 @@ hr {
   align-items: flex-start;
   align-content: flex-start;
   background-color: var(--main-bg-color);
-  min-height: var(--top-toolbar-min-height);
 }
 
 #tools_top>* {
